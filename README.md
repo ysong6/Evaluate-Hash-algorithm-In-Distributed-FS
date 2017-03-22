@@ -1,2 +1,4 @@
-# HashInDistributedFS
-evaluate hash algorithm in distributed file system simulator
+A key feature of a distributed file system is to distribute data to different data nodes, where these data are actually stored. To develop that feature, hash algorithm is a common choice. But in distributed file system, the possibility of data nodes change becomes too big to be ignored because of the huge scale of data nodes. That causes traditional hash algorithm cannot competent for this work. So a new hashing algorithm, Consistent hashing algorithm, become one of the key technique that has been explored to solve this issue.
+
+This project tries to evaluate these two algorithms in distributed file system with churn in terms of three factors: performance, balance and smoothness. In order to complete this work, this project implement a distributed file system simulator. This simulator implement a simple duplication mechanism, which supports two duplications of data, and simulates two common operations of file system -- "write" and "read". 
+
